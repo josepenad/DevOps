@@ -1,24 +1,24 @@
-parser: "@typescript-eslint/parser"
+parser: '@typescript-eslint/parser'
 parserOptions:
-    ecmaVersion: latest
-    sourceType: module
+  ecmaVersion: latest
+  sourceType: module
 env:
-    es2021: true
-    node: true
-    
+  es2021: true
+  node: true
+
 plugins:
-    - "@typescript-eslint"
+  - '@typescript-eslint'
 extends:
-    - eslint:recommended
-    - "plugin:@typescript-eslint/recommended"
-    - prettier
+  - eslint:recommended
+  - 'plugin:@typescript-eslint/recommended'
+  - prettier
 
 rules:
-    no-constant-binary-expression: error
-    no-constructor-return: error
-    "@typescript-eslint/no-unused-vars": error
-    "@typescript-eslint/consistent-type-definitions": off
-    camelcase: error # Camelcase naming convention
-    new-cap: error # Require constructor names to begin with a capital letter. THis will force to write class names stariting with capital letter.
-    no-magic-numbers: error # Avoid magic numbers
-    eqeqeq: error # Require the use of === and !==
+  no-constant-binary-expression: error
+  no-constructor-return: error
+  '@typescript-eslint/no-unused-vars': error
+  '@typescript-eslint/consistent-type-definitions': off
+  camelcase: error # Camelcase naming convention
+  new-cap: error # Require constructor names to begin with a capital letter. THis will force to write class names stariting with capital letter.
+  no-magic-numbers: error # Avoid magic numbers
+  eqeqeq: error # Require the use of === and !==

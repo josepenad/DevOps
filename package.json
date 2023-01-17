@@ -21,7 +21,7 @@
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
     "postlint": "echo ✅ lint valid",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|yml|yaml)\""
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
