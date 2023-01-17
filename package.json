@@ -13,14 +13,15 @@
   },
   "homepage": "https://github.com/josepenad/DevOps#readme",
   "scripts": {
-    "prepare": "husky install",
-    "start": "npx ts-node --files src/index.ts",
+    "dev": "npx ts-node --files src/index.ts",
+    "build": "tsc -p .",
+    "start": "npx ts-node --files dist/src/index.js",
     "test": "jest",
-    "dev": "tsc --watch",
+    "sandbox": "npx ts-node sandbox/sandbox.ts",
+    "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
     "postlint": "echo ✅ lint valid",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "sandbox": "npx ts-node sandbox/sandbox.ts"
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
