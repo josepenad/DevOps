@@ -10,3 +10,7 @@ export function hello(world: string = greeting): string {
 export function sample(param: string): string {
   return 'Hola' + param;
 }
+
+export function sample2(param: string): string {
+  return 'Hello' + param;
+}
