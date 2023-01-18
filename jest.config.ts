@@ -22,6 +22,9 @@ const jestConfig: JestConfigWithTsJest = {
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
+
+  // Indicates which directoies to ignore when making coverage reports
+  coveragePathIgnorePatterns: ['/node_modules/', '/types/'],
 };
 
 export default jestConfig;
