@@ -23,3 +23,12 @@ export function codeSmell(a: boolean) {
   }
   return b;
 }
+
+export function codeSmell2(a: boolean) {
+  // Intorduced for testing Sonarcloud Quality gate
+  const b = 12;
+  if (a) {
+    return b;
+  }
+  return b;
+}
