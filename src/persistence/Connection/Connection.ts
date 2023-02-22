@@ -1,12 +1,15 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Connection {
   connect(): Promise<boolean>;
   disconnect(): Promise<boolean>;
   test(): Promise<boolean>;
 
-  list(entityName: string): Promise<any[]>;
-  create(entityName: string, data: any): Promise<any>;
-  get(entityName: string, uniqueIdentifier: any): Promise<any>;
-  update(entityName: string, uniqueIdentifier: any, data: any): Promise<any>;
-  delete(entityName: string, uniqueIdentifier: any): Promise<any>;
+  list(entityName: string): Promise<unknown[]>;
+  create(entityName: string, data: unknown): Promise<unknown>;
+  get(entityName: string, uniqueIdentifier: unknown): Promise<unknown>;
+  update(
+    entityName: string,
+    uniqueIdentifier: unknown,
+    data: unknown
+  ): Promise<unknown>;
+  delete(entityName: string, uniqueIdentifier: unknown): Promise<unknown>;
 }

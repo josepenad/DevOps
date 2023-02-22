@@ -1,4 +1,5 @@
 const greeting = 'world';
+console.log(process.cwd());
 
 export function hello(world: string = greeting): string {
   if (world === 'Bob') {
@@ -15,20 +16,4 @@ export function sample2(param: string): string {
   return 'Hello' + param;
 }
 
-export function codeSmell(a: boolean) {
-  // Intorduced for testing Sonarcloud Quality gate
-  const b = 12;
-  if (a) {
-    return b;
-  }
-  return b;
-}
-
-export function codeSmell2(a: boolean) {
-  // Intorduced for testing Sonarcloud Quality gate
-  const b = 12;
-  if (a) {
-    return b;
-  }
-  return b;
-}
+console.log('Hola Mundo DevOps');
